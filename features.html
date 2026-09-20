@@ -6,6 +6,7 @@
     <title>Features - SegmaSirra</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/logoSito-removebg-preview.png">
+    <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "316c3d99291c4f0285ecc560127095c0"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body>
     <div class="video-background">
@@ -22,6 +23,7 @@
             <li><a href="features.html" class="nav-link active">Features</a></li>
             <li><a href="team.html" class="nav-link">Team</a></li>
             <li><a href="contact.html" class="nav-link">Contatti/FaQ</a></li>
+            <li><a href="sostenibilita.html" class="nav-link">Sostenibilità</a></li>
             <li><a href="download.html" class="cta-button">Download</a></li>
         </ul>
         <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -34,6 +36,7 @@
         <a href="features.html">Features</a>
         <a href="team.html">Team</a>
         <a href="contact.html">Contatti</a>
+        <a href="sostenibilita.html">Sostenibilità</a>
         <a href="download.html" class="cta-button">Download</a>
     </div>
 
@@ -46,91 +49,100 @@
 
     <!-- Features Detail -->
     <section class="features-detail-section">
-        <div class="features-detail-container">
+        <div class="features-detail-container features-with-sticky-image">
 
-            <div class="feature-detail-card">
-                <div class="feature-detail-icon">🌡️</div>
-                <div class="feature-detail-content">
+        <div class="features-sticky-photo">
+            <div class="photo-slot photo-slot--phone" style="border-style:solid;padding:0;overflow:hidden">
+              <img src="images/App.jpeg" alt="Screenshot app SegmaSirra" style="width:100%;height:100%;object-fit:cover;border-radius:22px">
+            </div>
+        </div>
+
+        <div class="panel panel--wide features-panel-scroll">
+
+            <div class="panel-row">
+                <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg></div>
+                <div class="panel-body">
                     <h3>Controllo Clima</h3>
                     <p>Monitora in tempo reale temperatura, umidità e luminosità tramite sensori ad alta precisione (DHT11, SHT45). Visualizza grafici storici e imposta soglie di allarme personalizzate.</p>
-                    <ul class="feature-list">
-                        <li>✅ Temperatura e umidità in tempo reale</li>
-                        <li>✅ Grafici storici a 24h / 7 giorni</li>
-                        <li>✅ Soglie di allarme configurabili</li>
-                        <li>✅ Supporto multi-sensore per zone diverse</li>
+                    <ul class="panel-list">
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Temperatura e umidità in tempo reale</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Grafici storici a 24h / 7 giorni</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Soglie di allarme configurabili</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Supporto multi-sensore per zone diverse</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="feature-detail-card feature-detail-card--reverse">
-                <div class="feature-detail-icon">💧</div>
-                <div class="feature-detail-content">
+            <div class="panel-row">
+                <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2s6 7.2 6 11.5A6 6 0 0 1 6 13.5C6 9.2 12 2 12 2z"/></svg></div>
+                <div class="panel-body">
                     <h3>Irrigazione Smart</h3>
                     <p>Il sistema legge i sensori di umidità del suolo e attiva automaticamente la pompa quando necessario. Puoi anche controllare manualmente tutto dall'app.</p>
-                    <ul class="feature-list">
-                        <li>✅ Attivazione automatica basata su umidità suolo</li>
-                        <li>✅ Controllo manuale da remoto</li>
-                        <li>✅ Scheduling programmabile</li>
-                        <li>✅ Monitoraggio livello di acqua rimasta nella cisterna</li>
+                    <ul class="panel-list">
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Attivazione automatica basata su umidità suolo</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Controllo manuale da remoto</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Scheduling programmabile</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Monitoraggio livello di acqua rimasta nella cisterna</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="feature-detail-card">
-                <div class="feature-detail-icon">📊</div>
-                <div class="feature-detail-content">
+            <div class="panel-row">
+                <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+                <div class="panel-body">
                     <h3>Analytics Avanzate</h3>
                     <p>Dashboard con dati aggregati, statistiche di produzione e trend. Ottimizza i consumi e identifica anomalie prima che diventino problemi.</p>
-                    <ul class="feature-list">
-                        <li>✅ Dashboard in tempo reale</li>
-                        <li>✅ Statistiche settimanali e mensili</li>
-                        <li>✅ Report automatici</li>
+                    <ul class="panel-list">
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Dashboard in tempo reale</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Statistiche settimanali e mensili</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Report automatici</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="feature-detail-card feature-detail-card--reverse">
-                <div class="feature-detail-icon">🔔</div>
-                <div class="feature-detail-content">
+            <div class="panel-row">
+                <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+                <div class="panel-body">
                     <h3>Notifiche Push</h3>
                     <p>Ricevi avvisi istantanei quando qualcosa non va: temperatura fuori soglia, umidità critica, pompa in errore o connessione persa.</p>
-                    <ul class="feature-list">
-                        <li>✅ Notifiche push su Android</li>
-                        <li>✅ Alert configurabili per ogni parametro</li>
-                        <li>✅ Log storico degli eventi</li>
-                        <li>✅ Priorità personalizzabile</li>
+                    <ul class="panel-list">
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Notifiche push su Android</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Alert configurabili per ogni parametro</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Log storico degli eventi</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Priorità personalizzabile</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="feature-detail-card">
-                <div class="feature-detail-icon">☀️</div>
-                <div class="feature-detail-content">
+            <div class="panel-row">
+                <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></div>
+                <div class="panel-body">
                     <h3>Energia Solare</h3>
                     <p>Il sistema è progettato per funzionare con pannelli solari. L'ESP32 e tutti i componenti sono interamente alimentati da energia green!</p>
-                    <ul class="feature-list">
-                        <li>✅ Ottimizzato per basso consumo</li>
-                        <li>✅ Compatibile con un piccolo pannelo solare</li>
-                        <li>✅ Deep sleep intelligente</li>
-                        <li>✅ Monitoraggio stato batteria</li>
+                    <ul class="panel-list">
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Ottimizzato per basso consumo</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Compatibile con un piccolo pannelo solare</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Deep sleep intelligente</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Monitoraggio stato batteria</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="feature-detail-card feature-detail-card--reverse">
-                <div class="feature-detail-icon">🔗</div>
-                <div class="feature-detail-content">
+            <div class="panel-row">
+                <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+                <div class="panel-body">
                     <h3>Connettività</h3>
                     <p>ESP32 + WiFi per la connessione locale, con Firebase come backend cloud. Accesso remoto garantito da qualsiasi parte del mondo.</p>
-                    <ul class="feature-list">
-                        <li>✅ WiFi 2.4GHz integrato</li>
-                        <li>✅ Firebase Realtime Database</li>
-                        <li>✅ Accesso remoto globale</li>
-                        <li>✅ OTA update firmware</li>
+                    <ul class="panel-list">
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>WiFi 2.4GHz integrato</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Firebase Realtime Database</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Accesso remoto globale</li>
+                        <li><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>OTA update firmware</li>
                     </ul>
                 </div>
             </div>
 
+        </div>
         </div>
     </section>
 
@@ -150,6 +162,7 @@
                 <a href="features.html">Features</a>
                 <a href="team.html">Team</a>
                 <a href="contact.html">Contatti</a>
+                <a href="sostenibilita.html">Sostenibilità</a>
                 <a href="download.html">Download</a>
             </div>
             <p class="footer-copy">&copy; 2026 SegmaSirra. Tutti i diritti non riservati</p>
@@ -164,10 +177,10 @@
         gsap.from(".page-hero h1", { opacity: 0, y: -30, duration: 1, delay: 0.1 });
         gsap.from(".page-hero p", { opacity: 0, y: -20, duration: 1, delay: 0.3 });
         
-        gsap.utils.toArray(".feature-detail-card").forEach((card, i) => {
-            gsap.from(card, {
-                scrollTrigger: { trigger: card, start: "top 85%" },
-                opacity: 0, x: i % 2 === 0 ? -60 : 60, duration: 0.9, ease: "power2.out"
+        gsap.utils.toArray(".panel-row").forEach((row, i) => {
+            gsap.from(row, {
+                scrollTrigger: { trigger: row, start: "top 90%" },
+                opacity: 0, y: 30, duration: 0.7, ease: "power2.out"
             });
         });
 
@@ -179,5 +192,6 @@
         });
     </script>
     <script src="cursor.js"></script>
+    <script src="translate.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/logoSito-removebg-preview.png">
+    <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "316c3d99291c4f0285ecc560127095c0"}'></script><!-- End Cloudflare Web Analytics -->
     <title>SegmaSirra - Botanica Intelligente</title>
 </head>
 <body>
@@ -24,6 +25,7 @@
             <li><a href="features.html" class="nav-link">Features</a></li>
             <li><a href="team.html" class="nav-link">Team</a></li>
             <li><a href="contact.html" class="nav-link">Contatti/FaQ</a></li>
+            <li><a href="sostenibilita.html" class="nav-link">Sostenibilità</a></li>
             <li><a href="download.html" class="cta-button">Download</a></li>
         </ul>
         <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -37,6 +39,7 @@
         <a href="features.html">Features</a>
         <a href="team.html">Team</a>
         <a href="contact.html">Contatti</a>
+        <a href="sostenibilita.html">Sostenibilità</a>
         <a href="download.html" class="cta-button">Download</a>
     </div>
 
@@ -47,7 +50,7 @@
                 <canvas id="canvas"></canvas>
             </div>
             <div class="hero-content">
-                <div class="hero-badge">🌱 Serra automatizzata</div>
+                <div class="hero-badge"><svg class="icon" viewBox="0 0 24 24" style="width:14px;height:14px;display:inline-block;vertical-align:-2px;margin-right:6px"><path d="M11 20A7 7 0 0 1 4 13V6a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v7a7 7 0 0 1-7 7z"/><path d="M11 20v-9"/><path d="M4 9c3 0 5 1 7 3"/></svg>Serra automatizzata</div>
                 <h1 class="hero-title">Coltiva il Futuro<br><span class="gradient-text">con Intelligenza</span></h1>
                 <p class="hero-sub">Utilizziamo energia pulita per rendere green la coltivazione di qualsiasi pianta</p>
                 <div class="hero-actions">
@@ -56,6 +59,10 @@
                 </div>
             </div>
         </section>
+        <div class="photo-slot" style="border-style:solid;padding:0;overflow:hidden">
+            <img src="images/Main.jpeg" alt="Serra SegmaSirra assemblata" style="width:100%;height:100%;object-fit:cover;border-radius:22px">
+        </div>
+        <br><br><br>
 
         <!-- Stats Section -->
         <section class="stats-section">
@@ -83,34 +90,49 @@
             <div class="features-container">
                 <div class="section-label">FUNZIONALITÀ</div>
                 <h2>Tecnologia al Servizio<br>della <span class="gradient-text">Natura</span></h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🌡️</div>
-                        <h3>Controllo Clima</h3>
-                        <p>Monitoraggio temperatura, umidità e luminosità in tempo reale con grafici storici</p>
-                        <a href="features.html" class="feature-link">Scopri →</a>
+                <div class="panel panel--wide">
+                    <div class="panel-row">
+                        <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg></div>
+                        <div class="panel-body">
+                            <h3>Controllo Clima</h3>
+                            <p>Monitoraggio temperatura, umidità e luminosità in tempo reale con grafici storici</p>
+                            <a href="features.html" class="panel-link">Scopri →</a>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">💧</div>
-                        <h3>Irrigazione Smart</h3>
-                        <p>Sistema automatizzato di irrigazione intelligente basato su sensori di umidità del suolo</p>
-                        <a href="features.html" class="feature-link">Scopri →</a>
+                    <div class="panel-row">
+                        <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2s6 7.2 6 11.5A6 6 0 0 1 6 13.5C6 9.2 12 2 12 2z"/></svg></div>
+                        <div class="panel-body">
+                            <h3>Irrigazione Smart</h3>
+                            <p>Sistema automatizzato di irrigazione intelligente basato su sensori di umidità del suolo</p>
+                            <a href="features.html" class="panel-link">Scopri →</a>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3>Analytics</h3>
-                        <p>Dati e statistiche avanzate per ottimizzare la produzione e ridurre gli sprechi</p>
-                        <a href="features.html" class="feature-link">Scopri →</a>
+                    <div class="panel-row">
+                        <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+                        <div class="panel-body">
+                            <h3>Analytics</h3>
+                            <p>Dati e statistiche avanzate per ottimizzare la produzione e ridurre gli sprechi</p>
+                            <a href="features.html" class="panel-link">Scopri →</a>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔔</div>
-                        <h3>Notifiche</h3>
-                        <p>Avvisi in tempo reale sullo stato della serra direttamente sul tuo smartphone</p>
-                        <a href="features.html" class="feature-link">Scopri →</a>
+                    <div class="panel-row">
+                        <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+                        <div class="panel-body">
+                            <h3>Notifiche</h3>
+                            <p>Avvisi in tempo reale sullo stato della serra direttamente sul tuo smartphone</p>
+                            <a href="features.html" class="panel-link">Scopri →</a>
+                        </div>
                     </div>
+                </div>
+                <div class="photo-slot" style="border-style:solid;padding:0;overflow:hidden">
+                    <img src="images/Back.jpeg" alt="Serra SegmaSirra assemblata" style="width:100%;height:100%;object-fit:cover;border-radius:22px">
                 </div>
             </div>
         </section>
+
+        <div class="photo-slot" style="border-style:solid;padding:0;overflow:hidden">
+            <img src="images/Side.jpeg" alt="Serra SegmaSirra assemblata" style="width:100%;height:100%;object-fit:cover;border-radius:22px">
+        </div>
 
         <!-- CTA Section -->
         <section class="cta-section">
@@ -129,6 +151,7 @@
                 <a href="features.html">Features</a>
                 <a href="team.html">Team</a>
                 <a href="contact.html">Contatti</a>
+                <a href="sostenibilita.html">Sostenibilità</a>
                 <a href="download.html">Download</a>
             </div>
             <p class="footer-copy">&copy; 2026 SegmaSirra. Tutti i diritti non riservati</p>
@@ -149,5 +172,6 @@
         });
     </script>
     <script src="cursor.js"></script>
+    <script src="translate.js"></script>
 </body>
 </html>

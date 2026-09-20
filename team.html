@@ -6,6 +6,7 @@
     <title>Team - SegmaSirra</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/logoSito-removebg-preview.png">
+    <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "316c3d99291c4f0285ecc560127095c0"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body>
     <!-- Sfondo video animato (collega il tuo .mp4 qui) -->
@@ -26,6 +27,7 @@
             <li><a href="features.html" class="nav-link">Features</a></li>
             <li><a href="team.html" class="nav-link active">Team</a></li>
             <li><a href="contact.html" class="nav-link">Contatti/FaQ</a></li>
+            <li><a href="sostenibilita.html" class="nav-link">Sostenibilità</a></li>
             <li><a href="download.html" class="cta-button">Download</a></li>
         </ul>
         <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -38,6 +40,7 @@
         <a href="features.html">Features</a>
         <a href="team.html">Team</a>
         <a href="contact.html">Contatti</a>
+        <a href="sostenibilita.html">Sostenibilità</a>
         <a href="download.html" class="cta-button">Download</a>
     </div>
 
@@ -54,12 +57,12 @@
             <div class="team-card">
                 <div class="team-card-glow"></div>
                 <div class="team-image">
-                    <img src="images/daniel.png" alt="Daniele Cerioli">
+                    <img src="images/dany.jpeg" alt="Daniele Cerioli">
                 </div>
                 <h3>Daniele Cerioli</h3>
-                <p class="team-title"></p>
+                <p class="team-title">Hardware &amp; Firmware Lead</p>
                 <div class="team-divider"></div>
-                <p class="team-description"></p>
+                <p class="team-description">Progetta e assembla l'elettronica della serra: ESP32, sensori, alimentazione a pannello solare e tutto il firmware che tiene in vita le piante quando nessuno guarda.</p>
                 <div class="team-tags">
                     <span class="tag">Hardware</span>
                     <span class="tag">Firmware</span>
@@ -70,12 +73,12 @@
             <div class="team-card team-card--center">
                 <div class="team-card-glow"></div>
                 <div class="team-image team-image--featured">
-                    <img src="images/andre.png" alt="Andrei Corduneanu">
+                    <img src="images/drei.jpg" alt="Andrei Corduneanu">
                 </div>
                 <h3>Andrei Corduneanu</h3>
-                <p class="team-title"></p>
+                <p class="team-title">3D Design &amp; Assembly</p>
                 <div class="team-divider"></div>
-                <p class="team-description"></p>
+                <p class="team-description">Modella e stampa in 3D il case della serra, cura l'assemblaggio fisico di tutto l'hardware — e trova sempre il modo di far entrare ogni cavo anche quando sulla carta non ci stava.</p>
                 <div class="team-tags">
                     <span class="tag">Modelli 3D</span>
                     <span class="tag">Assemblaggio</span>
@@ -85,18 +88,26 @@
             <div class="team-card">
                 <div class="team-card-glow"></div>
                 <div class="team-image">
-                    <img src="images/simon.jpeg" alt="Simone Panelli">
+                    <img src="images/jarvis.png" alt="Simone Panelli">
                 </div>
                 <h3>Simone Panelli</h3>
-                <p class="team-title"></p>
+                <p class="team-title">App &amp; Database Lead</p>
                 <div class="team-divider"></div>
-                <p class="team-description"></p>
+                <p class="team-description">Costruisce l'app Android e il backend Firebase che tengono traccia di ogni dato della serra — temperatura, umidità, irrigazione — in tempo reale, ovunque tu sia.</p>
                 <div class="team-tags">
                     <span class="tag">Database</span>
                     <span class="tag">App</span>
                 </div>
             </div>
         </div>
+        <br><br><br><br>
+        <section class="cta-section" style="padding-top:40px">
+            <div class="cta-inner">
+                <h2>Aperti ai <span class="gradient-text">Contributi</span></h2>
+                <p>SegmaSirra è completamente open source. Nuovi driver per sensori, miglioramenti all'app, o semplicemente un occhio in più sul codice — le pull request sono benvenute.</p>
+                <a href="https://github.com/Dragonyx118/SegmaSirra" target="_blank" class="cta-button-hero">Contribuisci su GitHub →</a>
+            </div>
+        </section>
     </section>
 
     <footer>
@@ -106,6 +117,7 @@
                 <a href="features.html">Features</a>
                 <a href="team.html">Team</a>
                 <a href="contact.html">Contatti</a>
+                <a href="sostenibilita.html">Sostenibilità</a>
                 <a href="download.html">Download</a>
             </div>
             <p class="footer-copy">&copy; 2026 SegmaSirra. Tutti i diritti non riservati</p>
@@ -135,5 +147,6 @@
         });
     </script>
     <script src="cursor.js"></script>
+    <script src="translate.js"></script>
 </body>
 </html>

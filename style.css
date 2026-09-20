@@ -1048,6 +1048,177 @@ footer {
 .footer-copy { color: var(--text-light); font-size: 13px; }
 
 /* =====================
+   ICONS (replace emoji glyphs)
+   ===================== */
+.icon {
+    width: 22px;
+    height: 22px;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    display: block;
+}
+
+/* =====================
+   PANEL — single glass block with internal rows
+   Replaces separate floating "cards" with one unified
+   semi-transparent surface, paragraph-style, like a pro site.
+   ===================== */
+.panel {
+    max-width: 880px;
+    margin: 56px auto 0;
+    background: rgba(255,255,255,0.60);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1.5px solid rgba(255,255,255,0.85);
+    border-radius: 24px;
+    padding: 8px 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07), 0 1px 0 #fff inset;
+}
+
+.panel--wide { max-width: 1000px; }
+
+.panel-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+.panel-row:last-child { border-bottom: none; }
+
+.panel-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: rgba(8,187,191,0.12);
+    border: 1px solid rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--teal);
+    flex-shrink: 0;
+}
+.panel-icon .icon { width: 22px; height: 22px; }
+
+.panel-body { flex: 1; min-width: 0; }
+.panel-body h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, var(--teal), var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.panel-body p { color: var(--text-muted); font-size: 14.5px; line-height: 1.7; }
+.panel-body p + p { margin-top: 10px; }
+
+.panel-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.panel-list li { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text-muted); }
+.panel-list .icon { width: 16px; height: 16px; color: var(--teal); flex-shrink: 0; }
+
+.panel-link { color: var(--teal); text-decoration: none; font-size: 14px; font-weight: 600; margin-top: 10px; display: inline-block; }
+.panel-link:hover { opacity: 0.7; }
+
+/* =====================
+   PHOTO SLOT — placeholder for future photos
+   ===================== */
+.photo-slot {
+    max-width: 900px;
+    margin: 48px auto 0;
+    aspect-ratio: 16 / 9;
+    border-radius: 24px;
+    border: 2px dashed rgba(0,0,0,0.18);
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--text-light);
+    text-align: center;
+    padding: 24px;
+    position: relative;
+    z-index: 1;
+}
+.photo-slot .icon { width: 32px; height: 32px; opacity: 0.55; }
+.photo-slot span { font-size: 13px; font-weight: 600; letter-spacing: 0.3px; }
+.photo-slot small { font-size: 11px; color: var(--text-light); opacity: 0.85; }
+
+.photo-slot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 48px auto 0;
+    position: relative;
+    z-index: 1;
+}
+.photo-slot-grid .photo-slot { margin: 0; max-width: none; aspect-ratio: 4 / 3; }
+
+/* =====================
+   FEATURES PAGE — sticky vertical app screenshot
+   .features-detail-container already sets display:flex;
+   flex-direction:column elsewhere — override explicitly here
+   with the combined selector so it always wins regardless of
+   source order.
+   ===================== */
+.features-detail-container.features-with-sticky-image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.features-sticky-photo {
+    position: sticky;
+    top: 100px;
+    flex: 0 0 300px;
+    width: 300px;
+    align-self: flex-start;
+    z-index: 2;
+}
+
+.photo-slot--phone {
+    aspect-ratio: 9 / 19.5;
+    max-width: 300px;
+    margin: 0;
+}
+
+.features-panel-scroll {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0 !important;
+    max-width: none !important;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 900px) {
+    .features-detail-container.features-with-sticky-image {
+        flex-direction: column;
+        gap: 0;
+    }
+    .features-sticky-photo {
+        position: static;
+        flex: none;
+        width: 100%;
+        max-width: 220px;
+        margin: 0 auto 32px;
+    }
+}
+
+/* =====================
    RESPONSIVE
    ===================== */
 @media (max-width: 900px) {
@@ -1072,6 +1243,9 @@ footer {
     .requirements-grid { grid-template-columns: 1fr; }
     .cta-inner { padding: 40px 24px; }
     .feature-detail-card { padding: 32px 24px; }
+    .panel { padding: 4px 20px; border-radius: 20px; }
+    .panel-row { gap: 14px; padding: 22px 0; }
+    .panel-icon { width: 40px; height: 40px; }
 }
 
 @media (max-width: 480px) {

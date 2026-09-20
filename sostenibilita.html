@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sostenibilità - SegmaSirra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logoSito-removebg-preview.png">
+    <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "316c3d99291c4f0285ecc560127095c0"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="videos/background2.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <nav>
+        <div class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">SegmaSirra</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="features.html" class="nav-link">Features</a></li>
+            <li><a href="team.html" class="nav-link">Team</a></li>
+            <li><a href="contact.html" class="nav-link">Contatti/FaQ</a></li>
+            <li><a href="sostenibilita.html" class="nav-link active">Sostenibilità</a></li>
+            <li><a href="download.html" class="cta-button">Download</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contatti</a>
+        <a href="sostenibilita.html">Sostenibilità</a>
+        <a href="download.html" class="cta-button">Download</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="section-label">SOSTENIBILITÀ</div>
+        <h1>Tecnologia <span class="gradient-text">al Servizio del Pianeta</span></h1>
+        <p>Perché abbiamo progettato SegmaSirra pensando all'impatto ambientale, non solo alla comodità</p>
+    </section>
+
+    <!-- Intro / why it matters -->
+    <section class="content-section" style="padding-top:0">
+        <div class="features-container">
+            <div class="section-label" style="text-align:center">PERCHÉ CE NE OCCUPIAMO</div>
+            <h2>Piccoli Sistemi,<br>Grande <span class="gradient-text">Differenza</span></h2>
+            <div class="panel panel--wide">
+                <div class="panel-row">
+                    <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></div>
+                    <div class="panel-body">
+                        <h3>Alimentato dal sole, non dalla rete</h3>
+                        <p>SegmaSirra è pensato per funzionare interamente a pannello solare. L'ESP32 e tutti i sensori sono a basso consumo, con deep sleep intelligente tra una lettura e l'altra — niente cavi verso la rete elettrica, niente CO₂ aggiuntiva per tenere accesa una serra.</p>
+                    </div>
+                </div>
+                <div class="panel-row">
+                    <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2s6 7.2 6 11.5A6 6 0 0 1 6 13.5C6 9.2 12 2 12 2z"/></svg></div>
+                    <div class="panel-body">
+                        <h3>Meno acqua sprecata</h3>
+                        <p>L'irrigazione parte solo quando il sensore di umidità del suolo dice che serve davvero, non a orari fissi "a occhio". Un'irrigazione fatta bene può ridurre lo spreco d'acqua molto più di quanto si pensi, specialmente nei mesi più caldi.</p>
+                    </div>
+                </div>
+                <div class="panel-row">
+                    <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+                    <div class="panel-body">
+                        <h3>Dati che aiutano a decidere meglio</h3>
+                        <p>Vedere temperatura, umidità e trend nel tempo aiuta a capire cosa serve davvero alla pianta, invece di sovra-innaffiare o sovra-concimare "per sicurezza" — che è anche una delle cause più comuni di spreco nell'orticoltura amatoriale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="photo-slot" style="border-style:solid;padding:0;overflow:hidden">
+        <img src="images/Plant.jpeg" alt="Serra SegmaSirra assemblata" style="width:100%;height:100%;object-fit:cover;border-radius:22px">
+    </div>
+
+    <!-- Bigger picture -->
+    <section class="content-section">
+        <div class="features-container">
+            <div class="section-label" style="text-align:center">IL QUADRO GENERALE</div>
+            <h2>Il Cambiamento Climatico<br>e Cosa <span class="gradient-text">Possiamo Fare Noi</span></h2>
+            <div class="panel panel--wide">
+                <div class="panel-row">
+                    <div class="panel-body" style="width:100%">
+                        <p>Non pretendiamo che una serra automatizzata da studenti risolva il cambiamento climatico. Ma crediamo che progetti piccoli, replicabili e open source contino: ogni sistema che riduce lo spreco d'acqua, usa energia pulita e rende l'agricoltura domestica più efficiente è un mattoncino in più nella direzione giusta.</p>
+                    </div>
+                </div>
+                <div class="panel-row">
+                    <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg></div>
+                    <div class="panel-body">
+                        <h3>Open source, quindi replicabile</h3>
+                        <p>Tutto il progetto — firmware, schema elettronico, app — è pubblico su GitHub. Chiunque può costruirsi la propria versione, adattarla, migliorarla. La sostenibilità di un progetto tecnico passa anche da quanto è facile riusarlo, senza dover reinventare tutto da zero.</p>
+                    </div>
+                </div>
+                <div class="panel-row">
+                    <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+                    <div class="panel-body">
+                        <h3>Educazione, non solo tecnologia</h3>
+                        <p>Costruire SegmaSirra ci ha fatto capire quanto sia facile sprecare acqua ed energia senza rendercene conto. Condividere il progetto è anche un modo per far riflettere altri studenti — e famiglie — su questi temi, in modo pratico invece che solo teorico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-inner">
+            <h2>Vuoi vedere come funziona <span class="gradient-text">nel dettaglio?</span></h2>
+            <p>Dai un'occhiata alle funzionalità o scarica l'app per iniziare a monitorare la tua serra.</p>
+            <a href="features.html" class="cta-button-hero">Scopri le Features</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">SegmaSirra</div>
+            <div class="footer-links">
+                <a href="features.html">Features</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contatti</a>
+                <a href="sostenibilita.html">Sostenibilità</a>
+                <a href="download.html">Download</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 SegmaSirra. Tutti i diritti non riservati</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from(".page-hero .section-label", { opacity: 0, y: -20, duration: 0.6 });
+        gsap.from(".page-hero h1", { opacity: 0, y: -30, duration: 1, delay: 0.1 });
+        gsap.from(".page-hero p", { opacity: 0, y: -20, duration: 1, delay: 0.3 });
+
+        gsap.utils.toArray(".panel-row").forEach((row) => {
+            gsap.from(row, {
+                scrollTrigger: { trigger: row, start: "top 90%" },
+                opacity: 0, y: 30, duration: 0.7, ease: "power2.out"
+            });
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+    <script src="cursor.js"></script>
+    <script src="translate.js"></script>
+</body>
+</html>

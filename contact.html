@@ -6,6 +6,7 @@
     <title>Contatti - SegmaSirra</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/logoSito-removebg-preview.png">
+    <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "316c3d99291c4f0285ecc560127095c0"}'></script><!-- End Cloudflare Web Analytics -->
     <style>
         /* ---- GitHub banner ---- */
         .github-section {
@@ -202,6 +203,7 @@
             <li><a href="features.html" class="nav-link">Features</a></li>
             <li><a href="team.html" class="nav-link">Team</a></li>
             <li><a href="contact.html" class="nav-link active">Contatti/FaQ</a></li>
+            <li><a href="sostenibilita.html" class="nav-link">Sostenibilità</a></li>
             <li><a href="download.html" class="cta-button">Download</a></li>
         </ul>
         <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -214,6 +216,7 @@
         <a href="features.html">Features</a>
         <a href="team.html">Team</a>
         <a href="contact.html">Contatti</a>
+        <a href="sostenibilita.html">Sostenibilità</a>
         <a href="download.html" class="cta-button">Download</a>
     </div>
 
@@ -229,21 +232,28 @@
         <div class="contact-page-grid">
 
             <div class="contact-info-col">
-                <div class="contact-info-card">
-                    <div class="contact-info-icon">📧</div>
-                    <h4>Email</h4>
-                    <p>segmasirra@gmail.com</p>
-                    <span class="contact-note">Risposta garantita*<br><small>*non garantita</small></span>
-                </div>
-                <div class="contact-info-card">
-                    <div class="contact-info-icon">📍</div>
-                    <h4>Sede Operativa</h4>
-                    <p>IIS Galileo Galilei<br>Crema, Lombardia 🇮🇹</p>
-                </div>
-                <div class="contact-info-card">
-                    <div class="contact-info-icon">⏰</div>
-                    <h4>Orari</h4>
-                    <p>Lun–Ven: 8:00–13:00<br>Quando non siamo a scuola</p>
+                <div class="panel" style="margin:0;padding:6px 24px">
+                    <div class="panel-row">
+                        <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                        <div class="panel-body">
+                            <h3 style="font-size:12px;letter-spacing:2px;text-transform:uppercase">Email</h3>
+                            <p>dany.cerioli08@gmail.com<br><span style="font-size:12px">Risposta garantita* — <small>*non garantita</small></span></p>
+                        </div>
+                    </div>
+                    <div class="panel-row">
+                        <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                        <div class="panel-body">
+                            <h3 style="font-size:12px;letter-spacing:2px;text-transform:uppercase">Sede Operativa</h3>
+                            <p>IIS Galileo Galilei<br>Crema, Lombardia, Italia</p>
+                        </div>
+                    </div>
+                    <div class="panel-row">
+                        <div class="panel-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                        <div class="panel-body">
+                            <h3 style="font-size:12px;letter-spacing:2px;text-transform:uppercase">Orari</h3>
+                            <p>Lun–Ven: 8:00–13:00<br>Quando non siamo a scuola</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -271,7 +281,7 @@
                             <textarea placeholder="Scrivi qui il tuo messaggio..." class="form-textarea" rows="4"></textarea>
                         </div>
                         <button class="form-submit-btn" onclick="handleSubmit(this)">
-                            Invia Messaggio 🚀
+                            Invia Messaggio
                         </button>
                     </div>
                 </div>
@@ -290,7 +300,7 @@
                     </svg>
                 </div>
                 <div class="github-banner-text">
-                    <h3>Il progetto è open source 🌱</h3>
+                    <h3>Il progetto è open source</h3>
                     <p>Codice firmware, schema PCB, app Android — tutto su GitHub.<br>Dai un'occhiata, apri una issue, rubaci il codice.</p>
                 </div>
             </div>
@@ -326,22 +336,22 @@
                 <div class="section-label">FAQ</div>
                 <h2>Domande <span class="gradient-text">frequenti</span></h2>
             </div>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4>Funziona senza internet?</h4>
-                    <p>Sfortunatamente no sia la serra sia dal dispositivo su cui si scarica l'app si deve essere connessi a internet, tuttavia la serra gestisce in automatico le funzioni base, e sull'app si può giocare a snake nell'attesa :)!</p>
+            <div class="panel">
+                <div class="panel-row" style="display:block">
+                    <h4 style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:8px;display:flex;align-items:flex-start;gap:10px"><span style="font-size:11px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--teal-light),var(--green-light));padding:2px 7px;border-radius:6px;flex-shrink:0;margin-top:2px">Q</span>Funziona senza internet?</h4>
+                    <p style="font-size:14px;color:var(--text-muted);line-height:1.65;padding-left:28px">Sfortunatamente no: sia la serra sia il dispositivo su cui gira l'app devono essere connessi a internet — tuttavia la serra gestisce in automatico le funzioni base, e sull'app si può giocare a snake nell'attesa :)!</p>
                 </div>
-                <div class="faq-item">
-                    <h4>Qual'è la scheda grafica del tuo computer?</h4>
-                    <p>RTX4060</p>
+                <div class="panel-row" style="display:block">
+                    <h4 style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:8px;display:flex;align-items:flex-start;gap:10px"><span style="font-size:11px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--teal-light),var(--green-light));padding:2px 7px;border-radius:6px;flex-shrink:0;margin-top:2px">Q</span>Qual'è la scheda grafica del tuo computer?</h4>
+                    <p style="font-size:14px;color:var(--text-muted);line-height:1.65;padding-left:28px">RTX4060</p>
                 </div>
-                <div class="faq-item">
-                    <h4>Quanto costa costruirlo?</h4>
-                    <p>I componenti principali (ESP32, sensori DHT11/SHT45, pompa) costano meno di 30€ in totale + pannello solare. Mentre il software è completamente gratuito e open source.</p>
+                <div class="panel-row" style="display:block">
+                    <h4 style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:8px;display:flex;align-items:flex-start;gap:10px"><span style="font-size:11px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--teal-light),var(--green-light));padding:2px 7px;border-radius:6px;flex-shrink:0;margin-top:2px">Q</span>Quanto costa costruirlo?</h4>
+                    <p style="font-size:14px;color:var(--text-muted);line-height:1.65;padding-left:28px">I componenti principali (ESP32, sensori DHT11/SHT45, pompa) costano meno di 30€ in totale + pannello solare. Il software è completamente gratuito e open source.</p>
                 </div>
-                <div class="faq-item">
-                    <h4>È disponibile su iOS?</h4>
-                    <p>No. Apple chiede 99$/anno per pubblicare sull'App Store.</p>
+                <div class="panel-row" style="display:block">
+                    <h4 style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:8px;display:flex;align-items:flex-start;gap:10px"><span style="font-size:11px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--teal-light),var(--green-light));padding:2px 7px;border-radius:6px;flex-shrink:0;margin-top:2px">Q</span>È disponibile su iOS?</h4>
+                    <p style="font-size:14px;color:var(--text-muted);line-height:1.65;padding-left:28px">No. Apple chiede 99$/anno per pubblicare sull'App Store.</p>
                 </div>
             </div>
         </div>
@@ -354,6 +364,7 @@
                 <a href="features.html">Features</a>
                 <a href="team.html">Team</a>
                 <a href="contact.html">Contatti</a>
+                <a href="sostenibilita.html">Sostenibilità</a>
                 <a href="download.html">Download</a>
             </div>
             <p class="footer-copy">&copy; 2026 SegmaSirra. Tutti i diritti non riservati</p>
@@ -367,7 +378,7 @@
         gsap.from(".page-hero .section-label", { opacity: 0, y: -20, duration: 0.6 });
         gsap.from(".page-hero h1", { opacity: 0, y: -30, duration: 1, delay: 0.1 });
         gsap.from(".page-hero p", { opacity: 0, y: -20, duration: 1, delay: 0.3 });
-        gsap.from(".contact-info-card", {
+        gsap.from(".contact-info-col .panel-row", {
             scrollTrigger: { trigger: ".contact-page-grid", start: "top 80%" },
             opacity: 0, x: -40, stagger: 0.15, duration: 0.8, ease: "power2.out"
         });
@@ -379,8 +390,8 @@
             scrollTrigger: { trigger: ".github-section", start: "top 85%" },
             opacity: 0, y: 40, duration: 0.9, ease: "power2.out"
         });
-        gsap.from(".faq-item", {
-            scrollTrigger: { trigger: ".faq-grid", start: "top 85%" },
+        gsap.from(".faq-inner .panel-row", {
+            scrollTrigger: { trigger: ".faq-inner .panel", start: "top 85%" },
             opacity: 0, y: 30, stagger: 0.12, duration: 0.7, ease: "power2.out"
         });
 
@@ -388,7 +399,7 @@
             btn.textContent = "Inviato! (no)";
             btn.style.background = "linear-gradient(135deg, #9ad63c, #08bbbf)";
             setTimeout(() => {
-                btn.textContent = "Invia Messaggio 🚀";
+                btn.textContent = "Invia Messaggio";
                 btn.style.background = "";
             }, 2000);
         }
@@ -401,5 +412,6 @@
         });
     </script>
     <script src="cursor.js"></script>
+    <script src="translate.js"></script>
 </body>
 </html>

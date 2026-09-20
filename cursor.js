@@ -23,11 +23,13 @@
         dot.style.top  = mouseY + 'px';
     });
 
-    // L'anello segue con inertia (lerp)
+    // L'anello segue con inertia minima (lerp), più reattivo e preciso.
+    // SPEED più alto = più veloce/preciso (1 = istantaneo). Regolabile.
+    const SPEED = 0.55;
     const lerp = (a, b, t) => a + (b - a) * t;
     function animateRing() {
-        ringX = lerp(ringX, mouseX, 0.12);
-        ringY = lerp(ringY, mouseY, 0.12);
+        ringX = lerp(ringX, mouseX, SPEED);
+        ringY = lerp(ringY, mouseY, SPEED);
         ring.style.left = ringX + 'px';
         ring.style.top  = ringY + 'px';
         requestAnimationFrame(animateRing);
